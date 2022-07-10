@@ -3,20 +3,20 @@
 A small example project showing various ways of using
 [libui-ng](https://github.com/libui-ng/libui-ng).
 
-## Make
+## Using Make
 
 - Install _libui-ng_ on your system.
 - Run `make` (_gmake_ or _bmake_).
 - Run `./sample`.
 
-Relevant files:
+### Relevant files
 
 ```
 Makefile
 main.c
 ```
 
-# Meson
+## Using Meson
 
 - Run `meson setup build`
 - Run `ninja -C build`.
@@ -26,7 +26,7 @@ This will either detect the system installed _libui-ng_ library (currently
 broken as no `.pc` file is provided by _libui-ng_) or build a local version
 from git.
 
-Relevant files:
+### Relevant files
 
 ```
 meson.build
@@ -34,7 +34,7 @@ subprojects/libui.wrap
 main.c
 ```
 
-# License
+## License
 
 Public domain.
 
