@@ -1,0 +1,7 @@
+[wrap-git]
+url = https://github.com/szanni/libui-ng.git
+revision = meson-subproject
+
+
+[provide]
+libui = libui_dep
