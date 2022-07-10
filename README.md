@@ -5,9 +5,16 @@ A small example project showing various ways of using
 
 ## Make
 
-- Install _libui-ng_ to your system.
+- Install _libui-ng_ on your system.
 - Run `make` (_gmake_ or _bmake_).
 - Run `./sample`.
+
+Relevant files:
+
+```
+Makefile
+main.c
+```
 
 # Meson
 
@@ -18,6 +25,14 @@ A small example project showing various ways of using
 This will either detect the system installed _libui-ng_ library (currently
 broken as no `.pc` file is provided by _libui-ng_) or build a local version
 from git.
+
+Relevant files:
+
+```
+meson.build
+subprojects/libui.wrap
+main.c
+```
 
 # License
 
