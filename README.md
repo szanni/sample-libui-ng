@@ -19,3 +19,7 @@ This will either detect the system installed _libui-ng_ library (currently
 broken as no `.pc` file is provided by _libui-ng_) or build a local version
 from git.
 
+# License
+
+Public domain.
+
