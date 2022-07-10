@@ -1,7 +1,7 @@
 # Sample project using libui-ng
 
 A small example project showing various ways of using
-(libui-ng)[https://github.com/libui-ng/libui-ng].
+[libui-ng](https://github.com/libui-ng/libui-ng).
 
 ## Make
 
