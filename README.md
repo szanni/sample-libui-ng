@@ -35,7 +35,17 @@ from git.
 meson.build
 subprojects/libui.wrap
 main.c
+win32/app.rc
+win32/app.manifest
 ```
+
+## Windows
+
+To run Windows GUI applications you need to provide an application manifest
+via the windows resources mechanism during the build process.
+
+An example of such a manifest can be found in `win32/app.manifest`, which is
+included by default when building with `meson`.
 
 ## License
 

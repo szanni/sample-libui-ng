@@ -6,7 +6,17 @@ project('sample', 'c',
 
 libui_dep = dependency('libui', fallback : ['libui', 'libui_dep'])
 
+sample_sources = []
+if host_machine.system() == 'windows'
+  windows = import('windows')
+  sample_sources += [
+    windows.compile_resources('win32/app.rc',
+    depend_files: ['win32/app.manifest']),
+  ]
+endif
+
 executable('sample',
   'main.c',
+  sample_sources,
   dependencies : libui_dep,
   install : true)
